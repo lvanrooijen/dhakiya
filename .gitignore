@@ -22,3 +22,30 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# intellik
+./idea/
+*.iml
+
+# maven
+target/
+
+
+# logs
+*.log
+*.log.*
+
+# database files
+*.db
+
+# spring boot files
+*.env
+*.properties
+
+
+.idea/compiler.xml
+/.idea
+mvnw
+mvnw.cmd
+pom.xml
+HELP.md
