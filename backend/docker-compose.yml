@@ -1,0 +1,22 @@
+services:
+  postgres:
+    container_name: dhakiya_pg_sql
+    image: postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_DEFAULT_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_DEFAULT_PASSWORD:-postgres}
+      PGDATA: /var/lib/postgresql/data
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+    networks:
+      - dhakiya
+    restart: unless-stopped
+
+networks:
+  dhakiya:
+    driver: bridge
+
+volumes:
+  postgres:

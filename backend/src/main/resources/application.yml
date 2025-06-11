@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: Dhakiya
+  logging:
+    level: debug
+  datasource:
+    url: jdbc:sqlite:dhakiya.db
+    username: ""
+    password: ""
+    driver-class-name: org.sqlite.JDBC
+    dialect: org.hibernate.community.dialect.SQLiteDialect
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.community.dialect.SQLiteDialect
+        format-sql: true
+dhakiya:
+  cors: http://localhost:3000
+
+

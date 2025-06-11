@@ -1,0 +1,12 @@
+services:
+  dhakiya-frontend:
+    build: .
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/dhakiya_frontend
+      - /dhakiya_frontend/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    stdin_open: true
+    tty: true
