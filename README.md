@@ -1,4 +1,6 @@
-# Dhakiya
+WIP
+
+## Dhakiya
 
 Create notes, flashcards, and quizzes.
 All organized by smart tagging within environments.
